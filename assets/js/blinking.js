@@ -11,7 +11,7 @@ window.onload = function () {
     if (!ismobile()) {
         //Flashing underscore
         setInterval(function () {
-            var name = document.getElementById("infoBox").getElementsByTagName("h1")[0];
+            var name = document.getElementById("left").getElementsByTagName("h1")[0];
             if (name.innerHTML == "Rhys Williams_") {
                 name.innerHTML = "Rhys Williams";
             } else {

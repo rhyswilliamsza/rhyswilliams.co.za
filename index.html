@@ -1,42 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Rhys Williams</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-<div id="wrapper">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel=stylesheet href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  
+  <body>
     <div id="left">
-        <img src="assets/images/rhys.jpg"/>
+      <h1>Rhys Williams</h1>
+      <h2>Computer Science Student | Entrepreneur | Writer</h2>
+      <p>
+        cinematography enthusiast,
+        </br>casual designer,
+        </br>music maniac.
+      </p>
     </div>
-
+    
     <div id="right">
-        <div id="infoBox">
-            <h1>Rhys Williams</h1>
-            <h2>CS Student | Entrepreneur | Blogger</h2>
-            <p>cinematography enthusiast,<br>
-                casual designer,<br>
-                music maniac.</p>
-            <div id="buttonDiv">
-                <a href="/blog/">
-                    <button>Visit Blog</button>
-                </a>
-                <a href="https://github.com/rhyswilliamsza">
-                    <button><i class="fa fa-github" aria-hidden="true"></i></button>
-                </a>
-                <a href="https://twitter.com/rhyswilliamsza">
-                    <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                </a>
-            </div>
-        </div>
+      <img id="corner" src="assets/images/rhys.jpg" />
     </div>
-</div>
-</body>
+    <div id="particles-js"></div>
+  </body>
 
-<script src="https://use.fontawesome.com/db7fc82604.js"></script>
-<script src="assets/js/blinking.js"></script>
+  <footer>
+      <script src="assets/js/blinking.js"></script>
+      <script src="assets/js/particles.min.js"></script>
+      <script>
+        particlesJS.load('particles-js', 'assets/js/particlesjs.json', function() {
+        console.log('callback - particles.js config loaded');
+        });
+</script>
+  </footer>
 
-</html>
+  </html>
+  
