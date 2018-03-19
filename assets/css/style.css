@@ -5,6 +5,25 @@
   z-index: 0;
 }
 
+button {
+  font-weight: 400;
+  color: #555;
+  font-size: 1vw;
+  position: relative;
+  background: none;
+  border: solid 2px #555;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a button {
+  margin-top: 1vh
+}
+
 #left {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
@@ -70,11 +89,23 @@ body {
   }
   
   #left h2 {
-    font-size: 1.7em;
+    display: none;
   }
   
   #left p {
     font-size: 1.2em;
+  }
+
+  #buttonDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;   
+  }
+
+  button {
+    margin-left: 2px;
+    font-size: 3vw;
+    padding: 10px;
   }
 }
 
