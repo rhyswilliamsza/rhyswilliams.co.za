@@ -74,11 +74,42 @@ body {
   }
 }
 
+@media (min-width: 0) and (max-width: 900px) and (orientation: landscape) {
+  #left {
+    top: 10%;
+    left: 5%;
+  }
+
+  #right {
+    width: 50%;
+  }
+
+  #left h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  
+  #left h2 {
+    display: none;
+  }
+  
+  #left p {
+    font-size: 1.2em;
+  }
+
+  button {
+    margin-right: 2px;
+    font-size: 2vw;
+    padding: 10px;
+  }
+}
+
+
 /* 
   Mobiles
 */
 
-@media (min-width: 0) and (max-width: 900px) {
+@media (min-width: 0) and (max-width: 900px) and (orientation: portrait) {
   #left {
     width: 100%;
     text-align: center;
