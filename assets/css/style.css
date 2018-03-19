@@ -1,3 +1,8 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 #corner {
   position: absolute;
   width: 100%;
@@ -39,7 +44,7 @@ a button {
 
 body {
   background-color: #eeeeee;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* 
