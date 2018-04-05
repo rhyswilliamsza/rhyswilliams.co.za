@@ -19,19 +19,19 @@
 			
 			<section id="thumbnails">
 
-				<!-- PHP to load all events -->
+				<!-- PHP to load all articles from JSON -->
 				<?php
 				$json = file_get_contents('https://cdn.rhyswilliams.co.za/ltml/content.json', true);
 				$articles = json_decode($json, false);
 
 				for ($i=0; $i < count($articles); $i++) {
-					$article = $articles[$i];
-					?>
-				<article>
+					$article = $articles[$i]; 
+				?><article>
 					<a class='thumbnail' href='<?php echo $article->src; ?>' data-position='left center'><img src='<?php echo $article->src; ?>' alt='' /></a>
 					<h2>#<?php echo $article->number; ?></h2>
 					<p><?php echo $article->date; ?></p>
 				</article>
+
 				<?php } ?>
 
 			</section>
